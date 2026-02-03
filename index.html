@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영어 단어 학습 & 퀴즈 - law</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .verb-highlight {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 2px 8px;
+      margin: 0 2px;
+      border-radius: 4px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .modal.show {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 90%;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+      <h1 class="text-3xl font-bold text-indigo-900 mb-2">영어 단어 학습 & 퀴즈</h1>
+      <p class="text-gray-600">주제: law | 수준: 고1</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+      <h2 class="text-2xl font-bold text-indigo-900 mb-4">핵심 단어 10개</h2>
+      <div class="space-y-4">
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">law</span>
+              <span class="text-gray-700 ml-3">- 법, 법률</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">Everyone must <span class="verb-highlight">obey</span> the law.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 모든 사람은 / <span class="verb-highlight">따라야 한다</span> / 법을.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">judge</span>
+              <span class="text-gray-700 ml-3">- 판사, 재판관</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">The judge <span class="verb-highlight">made</span> a fair decision.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 그 판사는 / <span class="verb-highlight">내렸다</span> / 공정한 결정을.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">court</span>
+              <span class="text-gray-700 ml-3">- 법정, 재판소</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">The trial <span class="verb-highlight">took</span> place in court.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 그 재판은 / <span class="verb-highlight">열렸다</span> / 법정에서.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">lawyer</span>
+              <span class="text-gray-700 ml-3">- 변호사</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">The lawyer <span class="verb-highlight">defended</span> his client.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 그 변호사는 / <span class="verb-highlight">변호했다</span> / 그의 의뢰인을.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">crime</span>
+              <span class="text-gray-700 ml-3">- 범죄</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">Stealing <span class="verb-highlight">is</span> a crime.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 훔치는 것은 / <span class="verb-highlight">이다</span> / 범죄.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">justice</span>
+              <span class="text-gray-700 ml-3">- 정의, 공정</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">We <span class="verb-highlight">believe</span> in justice for all.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 우리는 / <span class="verb-highlight">믿는다</span> / 모두를 위한 정의를.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">trial</span>
+              <span class="text-gray-700 ml-3">- 재판, 심리</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">The trial <span class="verb-highlight">lasted</span> three days.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 그 재판은 / <span class="verb-highlight">지속되었다</span> / 3일 동안.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">witness</span>
+              <span class="text-gray-700 ml-3">- 증인, 목격자</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">The witness <span class="verb-highlight">told</span> the truth.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 그 증인은 / <span class="verb-highlight">말했다</span> / 진실을.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">guilty</span>
+              <span class="text-gray-700 ml-3">- 유죄의, 죄책감이 있는</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">The jury <span class="verb-highlight">found</span> him guilty.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 배심원은 / <span class="verb-highlight">판결했다</span> / 그를 유죄로.
+            </div>
+          </div>
+        
+          <div class="border-l-4 border-indigo-500 pl-4 py-3 bg-indigo-50">
+            <div class="mb-2">
+              <span class="font-bold text-indigo-900 text-lg">evidence</span>
+              <span class="text-gray-700 ml-3">- 증거</span>
+            </div>
+            <div class="mb-1">
+              <span class="text-gray-800 italic">The police <span class="verb-highlight">collected</span> evidence at the scene.</span>
+            </div>
+            <div class="text-sm text-gray-600">
+              → 경찰은 / <span class="verb-highlight">수집했다</span> / 증거를 / 현장에서.
+            </div>
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6">
+      <h2 class="text-2xl font-bold text-indigo-900 mb-4">단어 퀴즈</h2>
+      <div class="space-y-6">
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 1</span>
+              <p class="text-lg text-gray-800 mt-1">The _______ presented evidence to prove the crime in court.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    lawyer <span class="text-yellow-700">(변호사)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    witness <span class="text-yellow-700">(증인, 목격자)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    crime <span class="text-yellow-700">(범죄)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    evidence <span class="text-yellow-700">(증거)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    court <span class="text-yellow-700">(법정, 재판소)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    presented <span class="text-yellow-700">(제시했다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    prove <span class="text-yellow-700">(증명하다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    in <span class="text-yellow-700">(~에서)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(0, 'lawyer')"
+                  class="quiz-option q0 option-lawyer p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="0"
+                  data-option="lawyer"
+                  data-correct="lawyer"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">lawyer</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(0, 'witness')"
+                  class="quiz-option q0 option-witness p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="0"
+                  data-option="witness"
+                  data-correct="lawyer"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">witness</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(0, 'crime')"
+                  class="quiz-option q0 option-crime p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="0"
+                  data-option="crime"
+                  data-correct="lawyer"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">crime</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(0, 'evidence')"
+                  class="quiz-option q0 option-evidence p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="0"
+                  data-option="evidence"
+                  data-correct="lawyer"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">evidence</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 2</span>
+              <p class="text-lg text-gray-800 mt-1">The judge asked the _______ to tell the truth during the trial.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    witness <span class="text-yellow-700">(증인, 목격자)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    judge <span class="text-yellow-700">(판사, 재판관)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    trial <span class="text-yellow-700">(재판, 심리)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    justice <span class="text-yellow-700">(정의, 공정)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    asked <span class="text-yellow-700">(요청했다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    tell <span class="text-yellow-700">(말하다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    truth <span class="text-yellow-700">(진실)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    during <span class="text-yellow-700">(~동안)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(1, 'witness')"
+                  class="quiz-option q1 option-witness p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="1"
+                  data-option="witness"
+                  data-correct="witness"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">witness</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(1, 'judge')"
+                  class="quiz-option q1 option-judge p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="1"
+                  data-option="judge"
+                  data-correct="witness"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">judge</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(1, 'trial')"
+                  class="quiz-option q1 option-trial p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="1"
+                  data-option="trial"
+                  data-correct="witness"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">trial</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(1, 'justice')"
+                  class="quiz-option q1 option-justice p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="1"
+                  data-option="justice"
+                  data-correct="witness"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">justice</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 3</span>
+              <p class="text-lg text-gray-800 mt-1">The court found him _______ because there was strong evidence of the crime.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    guilty <span class="text-yellow-700">(유죄의, 죄책감이 있는)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    court <span class="text-yellow-700">(법정, 재판소)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    evidence <span class="text-yellow-700">(증거)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    crime <span class="text-yellow-700">(범죄)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    found <span class="text-yellow-700">(판결했다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    because <span class="text-yellow-700">(왜냐하면)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    strong <span class="text-yellow-700">(강력한)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    there <span class="text-yellow-700">(거기에)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(2, 'guilty')"
+                  class="quiz-option q2 option-guilty p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="2"
+                  data-option="guilty"
+                  data-correct="guilty"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">guilty</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(2, 'court')"
+                  class="quiz-option q2 option-court p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="2"
+                  data-option="court"
+                  data-correct="guilty"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">court</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(2, 'evidence')"
+                  class="quiz-option q2 option-evidence p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="2"
+                  data-option="evidence"
+                  data-correct="guilty"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">evidence</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(2, 'crime')"
+                  class="quiz-option q2 option-crime p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="2"
+                  data-option="crime"
+                  data-correct="guilty"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">crime</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 4</span>
+              <p class="text-lg text-gray-800 mt-1">Breaking the _______ is a serious crime that can lead to a trial.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    law <span class="text-yellow-700">(법, 법률)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    crime <span class="text-yellow-700">(범죄)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    trial <span class="text-yellow-700">(재판, 심리)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    lawyer <span class="text-yellow-700">(변호사)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    breaking <span class="text-yellow-700">(어기는 것)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    serious <span class="text-yellow-700">(심각한)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    lead <span class="text-yellow-700">(이끌다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    can <span class="text-yellow-700">(~할 수 있다)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(3, 'law')"
+                  class="quiz-option q3 option-law p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="3"
+                  data-option="law"
+                  data-correct="law"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">law</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(3, 'crime')"
+                  class="quiz-option q3 option-crime p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="3"
+                  data-option="crime"
+                  data-correct="law"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">crime</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(3, 'trial')"
+                  class="quiz-option q3 option-trial p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="3"
+                  data-option="trial"
+                  data-correct="law"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">trial</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(3, 'lawyer')"
+                  class="quiz-option q3 option-lawyer p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="3"
+                  data-option="lawyer"
+                  data-correct="law"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">lawyer</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 5</span>
+              <p class="text-lg text-gray-800 mt-1">The _______ carefully examined all the evidence before making a decision in court.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    judge <span class="text-yellow-700">(판사, 재판관)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    court <span class="text-yellow-700">(법정, 재판소)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    evidence <span class="text-yellow-700">(증거)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    guilty <span class="text-yellow-700">(유죄의, 죄책감이 있는)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    carefully <span class="text-yellow-700">(신중하게)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    examined <span class="text-yellow-700">(조사했다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    before <span class="text-yellow-700">(~전에)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    making <span class="text-yellow-700">(내리는 것)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(4, 'judge')"
+                  class="quiz-option q4 option-judge p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="4"
+                  data-option="judge"
+                  data-correct="judge"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">judge</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(4, 'court')"
+                  class="quiz-option q4 option-court p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="4"
+                  data-option="court"
+                  data-correct="judge"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">court</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(4, 'evidence')"
+                  class="quiz-option q4 option-evidence p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="4"
+                  data-option="evidence"
+                  data-correct="judge"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">evidence</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(4, 'guilty')"
+                  class="quiz-option q4 option-guilty p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="4"
+                  data-option="guilty"
+                  data-correct="judge"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">guilty</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 6</span>
+              <p class="text-lg text-gray-800 mt-1">The witness provided important _______ that helped prove the crime during the trial.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    evidence <span class="text-yellow-700">(증거)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    witness <span class="text-yellow-700">(증인, 목격자)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    trial <span class="text-yellow-700">(재판, 심리)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    crime <span class="text-yellow-700">(범죄)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    provided <span class="text-yellow-700">(제공했다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    important <span class="text-yellow-700">(중요한)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    helped <span class="text-yellow-700">(도왔다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    prove <span class="text-yellow-700">(증명하다)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(5, 'evidence')"
+                  class="quiz-option q5 option-evidence p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="5"
+                  data-option="evidence"
+                  data-correct="evidence"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">evidence</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(5, 'witness')"
+                  class="quiz-option q5 option-witness p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="5"
+                  data-option="witness"
+                  data-correct="evidence"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">witness</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(5, 'trial')"
+                  class="quiz-option q5 option-trial p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="5"
+                  data-option="trial"
+                  data-correct="evidence"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">trial</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(5, 'crime')"
+                  class="quiz-option q5 option-crime p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="5"
+                  data-option="crime"
+                  data-correct="evidence"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">crime</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 7</span>
+              <p class="text-lg text-gray-800 mt-1">The lawyer argued for _______ in the court during the trial.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    justice <span class="text-yellow-700">(정의, 공정)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    lawyer <span class="text-yellow-700">(변호사)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    court <span class="text-yellow-700">(법정, 재판소)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    trial <span class="text-yellow-700">(재판, 심리)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    argued <span class="text-yellow-700">(주장했다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    for <span class="text-yellow-700">(~을 위해)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    during <span class="text-yellow-700">(~동안)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    the <span class="text-yellow-700">(그)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(6, 'justice')"
+                  class="quiz-option q6 option-justice p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="6"
+                  data-option="justice"
+                  data-correct="justice"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">justice</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(6, 'lawyer')"
+                  class="quiz-option q6 option-lawyer p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="6"
+                  data-option="lawyer"
+                  data-correct="justice"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">lawyer</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(6, 'court')"
+                  class="quiz-option q6 option-court p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="6"
+                  data-option="court"
+                  data-correct="justice"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">court</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(6, 'trial')"
+                  class="quiz-option q6 option-trial p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="6"
+                  data-option="trial"
+                  data-correct="justice"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">trial</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 8</span>
+              <p class="text-lg text-gray-800 mt-1">Committing a _______ against the law will result in a trial in court.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    crime <span class="text-yellow-700">(범죄)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    law <span class="text-yellow-700">(법, 법률)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    trial <span class="text-yellow-700">(재판, 심리)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    court <span class="text-yellow-700">(법정, 재판소)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    committing <span class="text-yellow-700">(저지르는 것)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    against <span class="text-yellow-700">(~에 반하는)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    will <span class="text-yellow-700">(~할 것이다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    result <span class="text-yellow-700">(결과를 낳다)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(7, 'crime')"
+                  class="quiz-option q7 option-crime p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="7"
+                  data-option="crime"
+                  data-correct="crime"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">crime</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(7, 'law')"
+                  class="quiz-option q7 option-law p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="7"
+                  data-option="law"
+                  data-correct="crime"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">law</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(7, 'trial')"
+                  class="quiz-option q7 option-trial p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="7"
+                  data-option="trial"
+                  data-correct="crime"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">trial</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(7, 'court')"
+                  class="quiz-option q7 option-court p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="7"
+                  data-option="court"
+                  data-correct="crime"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">court</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 9</span>
+              <p class="text-lg text-gray-800 mt-1">The _______ began after the lawyer presented evidence to the judge.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    trial <span class="text-yellow-700">(재판, 심리)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    lawyer <span class="text-yellow-700">(변호사)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    evidence <span class="text-yellow-700">(증거)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    judge <span class="text-yellow-700">(판사, 재판관)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    began <span class="text-yellow-700">(시작되었다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    after <span class="text-yellow-700">(~후에)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    presented <span class="text-yellow-700">(제시했다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    to <span class="text-yellow-700">(~에게)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(8, 'trial')"
+                  class="quiz-option q8 option-trial p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="8"
+                  data-option="trial"
+                  data-correct="trial"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">trial</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(8, 'lawyer')"
+                  class="quiz-option q8 option-lawyer p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="8"
+                  data-option="lawyer"
+                  data-correct="trial"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">lawyer</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(8, 'evidence')"
+                  class="quiz-option q8 option-evidence p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="8"
+                  data-option="evidence"
+                  data-correct="trial"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">evidence</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(8, 'judge')"
+                  class="quiz-option q8 option-judge p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="8"
+                  data-option="judge"
+                  data-correct="trial"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">judge</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+          <div class="border-2 border-gray-200 rounded-lg p-5">
+            <div class="mb-3">
+              <span class="text-sm font-semibold text-indigo-600">문제 10</span>
+              <p class="text-lg text-gray-800 mt-1">The _______ is a place where judges decide if someone is guilty of a crime.</p>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-200 rounded p-3 mb-4">
+              <div class="text-xs text-yellow-800 font-semibold mb-1">참조 단어:</div>
+              <div class="flex flex-wrap gap-2">
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    court <span class="text-yellow-700">(법정, 재판소)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    judge <span class="text-yellow-700">(판사, 재판관)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    guilty <span class="text-yellow-700">(유죄의, 죄책감이 있는)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    crime <span class="text-yellow-700">(범죄)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    place <span class="text-yellow-700">(장소)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    where <span class="text-yellow-700">(~하는 곳)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    decide <span class="text-yellow-700">(결정하다)</span>
+                  </span>
+                
+                  <span class="bg-yellow-100 px-2 py-1 rounded text-sm text-yellow-900">
+                    someone <span class="text-yellow-700">(누군가)</span>
+                  </span>
+                
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              
+                <button 
+                  onclick="selectAnswer(9, 'court')"
+                  class="quiz-option q9 option-court p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="9"
+                  data-option="court"
+                  data-correct="court"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">court</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(9, 'judge')"
+                  class="quiz-option q9 option-judge p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="9"
+                  data-option="judge"
+                  data-correct="court"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">judge</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(9, 'guilty')"
+                  class="quiz-option q9 option-guilty p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="9"
+                  data-option="guilty"
+                  data-correct="court"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">guilty</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+                <button 
+                  onclick="selectAnswer(9, 'crime')"
+                  class="quiz-option q9 option-crime p-3 rounded-lg border-2 text-left transition bg-white border-gray-300 hover:border-indigo-400 cursor-pointer"
+                  data-quiz="9"
+                  data-option="crime"
+                  data-correct="court"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="font-medium">crime</span>
+                    <span class="result-icon hidden"></span>
+                  </div>
+                </button>
+              
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="flex justify-center mt-6">
+        <div id="scoreDisplay" class="hidden flex items-center gap-4">
+          <span class="text-2xl font-bold text-indigo-900">점수: <span id="score">0</span> / 10</span>
+          <button onclick="resetQuiz()" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+            다시 풀기
+          </button>
+        </div>
+        <button id="checkBtn" onclick="showNameModal()" class="px-8 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition text-lg">
+          채점하기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nameModal" class="modal">
+    <div class="modal-content">
+      <h3 class="text-xl font-bold text-indigo-900 mb-4">학생 이름을 입력하세요</h3>
+      <input 
+        type="text" 
+        id="studentName" 
+        placeholder="이름을 입력하세요"
+        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg mb-4 focus:border-indigo-500 focus:outline-none"
+        onkeypress="if(event.key==='Enter') submitResults()"
+      />
+      <div class="flex gap-3">
+        <button onclick="closeModal()" class="flex-1 px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition">
+          취소
+        </button>
+        <button onclick="submitResults()" class="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+          제출
+        </button>
+      </div>
+      <div id="submitMessage" class="mt-3 text-center hidden"></div>
+    </div>
+  </div>
+
+  <script>
+    const selectedAnswers = {};
+    let showResults = false;
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxTh62kPCjXpvLyrQF-Lg1pGKMePzdG0yPKjlQW44FOiCCQ2UcUb_IRfPndG33gpf0mnw/exec';
+    const TOTAL_QUESTIONS = 10;
+
+    function selectAnswer(quizIndex, answer) {
+      if (showResults) return;
+      selectedAnswers[quizIndex] = answer;
+      document.querySelectorAll('.q' + quizIndex).forEach(btn => {
+        btn.classList.remove('bg-indigo-100', 'border-indigo-500');
+        btn.classList.add('bg-white', 'border-gray-300');
+      });
+      const selectedBtn = document.querySelector('.q' + quizIndex + '.option-' + answer.replace(/[^a-zA-Z0-9]/g, '_'));
+      if (selectedBtn) {
+        selectedBtn.classList.remove('bg-white', 'border-gray-300');
+        selectedBtn.classList.add('bg-indigo-100', 'border-indigo-500');
+      }
+    }
+
+    function showNameModal() {
+      const answeredCount = Object.keys(selectedAnswers).length;
+      if (answeredCount < TOTAL_QUESTIONS) {
+        alert('모든 문제에 답해주세요! (현재 ' + answeredCount + '/' + TOTAL_QUESTIONS + ' 완료)');
+        return;
+      }
+      document.getElementById('nameModal').classList.add('show');
+      document.getElementById('studentName').focus();
+    }
+
+    function closeModal() {
+      document.getElementById('nameModal').classList.remove('show');
+      document.getElementById('studentName').value = '';
+      document.getElementById('submitMessage').classList.add('hidden');
+    }
+
+    async function submitResults() {
+      const name = document.getElementById('studentName').value.trim();
+      if (!name) {
+        alert('이름을 입력해주세요!');
+        return;
+      }
+
+      const score = calculateScore();
+      const messageEl = document.getElementById('submitMessage');
+      messageEl.textContent = '채점 결과를 전송하고 있습니다...';
+      messageEl.className = 'mt-3 text-center text-blue-600 font-semibold';
+      messageEl.classList.remove('hidden');
+
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name,
+            score: score,
+            total: TOTAL_QUESTIONS,
+            topic: 'law',
+            level: '고1'
+          })
+        });
+
+        messageEl.textContent = '✓ 채점 결과가 전송되었습니다!';
+        messageEl.className = 'mt-3 text-center text-green-600 font-semibold';
+
+        setTimeout(() => {
+          closeModal();
+          checkAnswers();
+        }, 1500);
+      } catch (error) {
+        messageEl.textContent = '전송 중 오류가 발생했습니다.';
+        messageEl.className = 'mt-3 text-center text-red-600 font-semibold';
+      }
+    }
+
+    function calculateScore() {
+      let correct = 0;
+      document.querySelectorAll('.quiz-option').forEach(btn => {
+        const quizIndex = parseInt(btn.dataset.quiz);
+        const option = btn.dataset.option;
+        const correctAnswer = btn.dataset.correct;
+        if (selectedAnswers[quizIndex] === option && option === correctAnswer) {
+          correct++;
+        }
+      });
+      return correct;
+    }
+
+    function checkAnswers() {
+      showResults = true;
+      let correct = 0;
+      document.querySelectorAll('.quiz-option').forEach(btn => {
+        const quizIndex = parseInt(btn.dataset.quiz);
+        const option = btn.dataset.option;
+        const correctAnswer = btn.dataset.correct;
+        const isSelected = selectedAnswers[quizIndex] === option;
+        const isCorrect = option === correctAnswer;
+
+        btn.disabled = true;
+        btn.classList.remove('hover:border-indigo-400', 'cursor-pointer');
+        btn.classList.add('cursor-not-allowed');
+
+        if (isCorrect) {
+          btn.classList.add('bg-green-100', 'border-green-500');
+          btn.querySelector('.result-icon').innerHTML = '✓';
+          btn.querySelector('.result-icon').classList.remove('hidden');
+          btn.querySelector('.result-icon').classList.add('text-green-600', 'font-bold', 'text-xl');
+        } else if (isSelected) {
+          btn.classList.add('bg-red-100', 'border-red-500');
+          btn.querySelector('.result-icon').innerHTML = '✗';
+          btn.querySelector('.result-icon').classList.remove('hidden');
+          btn.querySelector('.result-icon').classList.add('text-red-600', 'font-bold', 'text-xl');
+        }
+
+        if (isSelected && isCorrect) correct++;
+      });
+
+      document.getElementById('score').textContent = correct;
+      document.getElementById('scoreDisplay').classList.remove('hidden');
+      document.getElementById('checkBtn').classList.add('hidden');
+    }
+
+    function resetQuiz() {
+      showResults = false;
+      Object.keys(selectedAnswers).forEach(key => delete selectedAnswers[key]);
+      document.querySelectorAll('.quiz-option').forEach(btn => {
+        btn.classList.remove('bg-green-100', 'bg-red-100', 'bg-indigo-100', 'border-green-500', 'border-red-500', 'border-indigo-500', 'cursor-not-allowed');
+        btn.classList.add('bg-white', 'border-gray-300', 'hover:border-indigo-400', 'cursor-pointer');
+        btn.disabled = false;
+        btn.querySelector('.result-icon').innerHTML = '';
+        btn.querySelector('.result-icon').classList.add('hidden');
+      });
+      document.getElementById('scoreDisplay').classList.add('hidden');
+      document.getElementById('checkBtn').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
